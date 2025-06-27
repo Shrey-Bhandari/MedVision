@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MedVision AI | Choose Diagnosis</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <header class="header">
+    <h1>MedVision AI</h1>
+    <p>Select a diagnosis type to get started</p>
+  </header>
+
+  <main class="main">
+    <section class="diagnosis-grid">
+      <!-- Pneumonia -->
+      <div class="card pneumonia" onclick="goToDiagnosis('pneumonia')">
+        <div class="icon">🏥</div>
+        <h3>Pneumonia (X-ray)</h3>
+      </div>
+
+      <!-- Brain Tumor -->
+      <div class="card brain" onclick="goToDiagnosis('brain')">
+        <div class="icon">🧠</div>
+        <h3>Brain Tumor (MRI)</h3>
+      </div>
+
+      <!-- Skin Cancer -->
+      <div class="card skin" onclick="goToDiagnosis('skin')">
+        <div class="icon">🧴</div>
+        <h3>Skin Cancer</h3>
+      </div>
+
+      <!-- Diabetes -->
+      <div class="card diabetes" onclick="goToDiagnosis('diabetes')">
+        <div class="icon">🩸</div>
+        <h3>Diabetes Prediction</h3>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 MedVision AI. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function goToDiagnosis(type) {
+      window.location.href = `upload.html?type=${type}`;
+    }
+  </script>
+</body>
+</html>
