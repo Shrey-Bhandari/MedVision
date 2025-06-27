@@ -129,3 +129,28 @@ button.btn-primary:hover {
 .hidden {
   display: none;
 }
+
+.result-box {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.result-box h2 {
+  color: #0077cc;
+  margin-bottom: 10px;
+}
+
+.prediction {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 10px 0 20px;
+}
+
+.gradcam {
+  max-width: 100%;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+}

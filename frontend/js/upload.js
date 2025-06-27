@@ -32,7 +32,7 @@ async function handleSubmit(formData) {
   spinner.classList.remove("hidden");
 
   try {
-    const res = await fetch("http://localhost:5000/predict", {
+    const res = await fetch("http://localhost:8000/predict", {
       method: "POST",
       body: formData,
     });
